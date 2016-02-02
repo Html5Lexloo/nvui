@@ -1,15 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<body>
-<script type="text/javascript" src="../../lib/jquery/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="./core/base.js"></script>
-<script type="text/javascript" src="./plugin/nvLayout.js"></script>
-<script type="text/javascript" src="./plugin/nvPanel.js"></script>
-<div><input id="test" value="aaaa"/></div>
-<script type="text/javascript">
-	alert("that");
-</script>
+	<link rel="stylesheet" type="text/css" href="./skins/default/css/layout.css"/>
+	<script type="text/javascript" src="jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="./core/base.js"></script>
+	<script type="text/javascript" src="./plugin/nvLayout.js"></script>
+	<script type="text/javascript" src="./plugin/nvPanel.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#layout1").nvLayout({ leftWidth: 200});
+		});
+	</script>
+</head>
+	<body style="padding:10px">  
+    <div id="layout1">
+      	<div position="left"></div>
+       	<div position="center" title="标题">
+       	<h4>$("#layout1").nvLayout({ leftWidth: 200});</h4>
+                去掉头部和底部，只显示中间
+       	</div>
+       	<div position="right"></div>  
+   	</div> 
 </body>
 </html>
-
