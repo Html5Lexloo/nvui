@@ -8,18 +8,34 @@
 	<script type="text/javascript" src="./plugin/nvPanel.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			$("#layout1").nvLayout({ leftWidth: 200});
+			$("#layout2, #layout1").nvLayout({ leftWidth: 200,centerBottomHeight:180});
 		});
 	</script>
+	<style type="text/css">
+		html, body{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			overflow:hidden;
+		}
+		#layout2{  width:100%;margin:0; padding:0; }  
+	</style>
 </head>
-	<body style="padding:0;margin:0">  
-    <div id="layout1">
-      	<div position="left"></div>
-       	<div position="center" title="标题">
-       	<h4>$("#layout1").nvLayout({ leftWidth: 200});</h4>
-                去掉头部和底部，只显示中间
-       	</div>
-       	<div position="right"></div>  
-   	</div> 
+	<body>  
+<div class="l-page-top">这个不是layout的一部分，作为单独的页面的头部</div>
+      <div id="layout1">
+            <div position="left"></div>
+            <div position="center" title="标题">
+            <h4>$("#layout1").ligerLayout({ leftWidth: 200});</h4> 
+                <br />
+                如果上面有其他页面元素，layout会自适应调整
+                
+            </div>  
+          <div position="centerbottom" title="下方区域">
+              中间下方区域
+            </div>  
+        </div> 
+
 </body>
 </html>
