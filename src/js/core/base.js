@@ -622,6 +622,36 @@
             }
         }
     };
+
+    /*窗口基类 window、dialog*/
+    nvui.core.Win = function(element, options) {
+        nvui.core.Win.base.constructor.call(this, element, options);
+    };
+
+    nvui.inherits(nvui.core.Win, nvui.core.UIComponent, {
+        __getType: function() {
+            return 'liger.controls.Win';
+        },
+        mask: function() {
+            if (this.options.modal)
+                nvui.win.mask(this);
+        },
+        unmask: function() {
+            if (this.options.modal)
+                nvui.win.unmask(this);
+        },
+        min: function() {},
+        max: function() {},
+        active: function() {}
+    });
+
+    nvui.draggable = {
+        dragging: false
+    };
+
+    nvui.resizable = {
+        reszing: false
+    };
 })(jQuery);
 
 (function() {
