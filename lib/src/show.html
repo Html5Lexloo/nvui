@@ -6,12 +6,13 @@
 	<script type="text/javascript" src="./core/base.js"></script>
 	<script type="text/javascript" src="./plugin/nvLayout.js"></script>
 	<script type="text/javascript" src="./plugin/nvGridSelector.js"></script>
+	<script type="text/javascript" src="./lib/jquery.pagination.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$("#layout1").nvLayout({});
 			$("#grid").nvGridSelector({
-				columns: [	{caption: "字段1", width: 200, visible: true},
-							{caption: "字段2", width: 400}]
+				columns: [	{caption: "字段1", width: 200, code: "f1"},
+							{caption: "字段2", width: 400, code: "f2"}]
 			});
 		});
 	</script>
