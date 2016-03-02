@@ -1,0 +1,1 @@
+copy .\lib\src\core\base.js + .\lib\src\plugin\nvLayout.js + .\lib\src\plugin\nvGridSelector.js  nvui.js
