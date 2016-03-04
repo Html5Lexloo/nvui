@@ -1,1 +1,1 @@
-copy .\lib\src\core\base.js + .\lib\src\plugin\nvLayout.js + .\lib\src\plugin\nvGridSelector.js  nvui.js
+copy .\lib\src\core\base.js + .\lib\src\plugin\nvLayout.js + .\lib\src\plugin\nvCalendar.js + .\lib\src\plugin\nvYearMonthSelect.js + .\lib\src\plugin\nvGridSelector.js  nvui.js
